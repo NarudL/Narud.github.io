@@ -5,3 +5,22 @@ body {
     text-align: center;
     padding: 50px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 300px; /* Ajusta el tamaño según la foto */
+    border-radius: 10px; /* Opcional: para bordes redondeados */
+}
+
