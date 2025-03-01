@@ -51,3 +51,21 @@ nav ul li a {
 .oculto {
     display: none;
 }
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Aumenta el espacio entre imágenes */
+    padding: 20px;
+}
+
+.foto-portafolio {
+    width: 300px; /* Aumenta el tamaño de las fotos */
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-portafolio:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
