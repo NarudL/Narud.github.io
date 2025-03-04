@@ -7,8 +7,8 @@ body {
 }
 
 .titulo {
-    font-size: 3rem;
-    margin: 20px 0;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .portada {
@@ -18,7 +18,7 @@ body {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -30,45 +30,36 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+}
+
+.marco {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: inline-block;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
     margin-top: 20px;
 }
 
 .foto-portafolio {
-    width: 30%;
+    width: 100%;
     max-width: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .oculto {
     display: none;
 }
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Aumenta el espacio entre imágenes */
-    padding: 20px;
-}
 
-.foto-portafolio {
-    width: 300px; /* Aumenta el tamaño de las fotos */
-    height: auto;
-    border-radius: 10px; /* Esquinas redondeadas (opcional) */
-    transition: transform 0.3s ease-in-out;
-}
-
-.foto-portafolio:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-}
-.oculto {
-    display: none;
+hr {
+    margin: 40px 0;
+    border: 1px solid white;
 }
