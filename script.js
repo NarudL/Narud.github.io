@@ -1,8 +1,8 @@
 function mostrarGaleria(id) {
     var galeria = document.getElementById(id);
-    if (galeria.classList.contains("oculto")) {
-        galeria.classList.remove("oculto");
+    if (galeria.style.display === "none" || galeria.style.display === "") {
+        galeria.style.display = "grid";
     } else {
-        galeria.classList.add("oculto");
+        galeria.style.display = "none";
     }
 }
