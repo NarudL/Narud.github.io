@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Narud</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1 class="titulo">náruD</h1>
-    <img src="portada.JPEG" alt="Portada" class="portada">
+    <h1 class="titulo">Narud</h1>
+    <img src="portada.JPG" alt="Portada" class="portada">
 
     <nav>
         <ul>
-            <li><a href="#" id="mostrar-galeria">La presencia en la nada</a></li>
-           
+            <li><a href="#proyectos">Mis proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <section id="portafolio" class="oculto">
-        <h2>La presencia en la nada</h2>
-        <div class="galeria">
-           
-            <img src="fondo_negro/jazmin.jpg" alt="Jazmín" class="foto-portafolio">
-            <img src="fondo_negro/cattleya.jpg" alt="Cattleya" class="foto-portafolio">
-            <img src="fondo_negro/helecho.jpg" alt="Helecho" class="foto-portafolio">
-            <img src="fondo_negro/sepalo.jpg" alt="Sépalo" class="foto-portafolio">
-            <img src="fondo_negro/anturio.jpg" alt="Anturio" class="foto-portafolio">
-            <img src="fondo_negro/cabras.jpg" alt="Cabras" class="foto-portafolio">
-            <img src="fondo_negro/avion.jpg" alt="Avión" class="foto-portafolio">
-            <img src="fondo_negro/trimezia.jpg" alt="Trimezia" class="foto-portafolio">
-            <img src="fondo_negro/bambu.jpg" alt="Bambú" class="foto-portafolio">
+    <section id="proyectos">
+        <h2>Mis proyectos</h2>
+        <div class="proyecto" onclick="mostrarGaleria()">
+            <h3>La presencia en la nada</h3>
+        </div>
+        <div id="galeria" class="galeria oculto">
+            <img src="fondo negro/jazmin.jpg" class="foto-portafolio">
+            <img src="fondo negro/cattleya.jpg" class="foto-portafolio">
+            <img src="fondo negro/helecho.jpg" class="foto-portafolio">
+            <img src="fondo negro/sepalo.jpg" class="foto-portafolio">
+            <img src="fondo negro/anturio.jpg" class="foto-portafolio">
+            <img src="fondo negro/cabras.jpg" class="foto-portafolio">
+            <img src="fondo negro/avion.jpg" class="foto-portafolio">
+            <img src="fondo negro/trimezia.jpg" class="foto-portafolio">
+            <img src="fondo negro/bambu.jpg" class="foto-portafolio">
         </div>
     </section>
+
+    <hr>
 
     <section id="contacto">
         <h2>Contacto</h2>
@@ -39,7 +44,5 @@
         <p>Correo: duranmateo220@gmail.com</p>
         <p>El contacto más rápido es vía <a href="https://wa.me/573175371135" target="_blank">WhatsApp</a>.</p>
     </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
