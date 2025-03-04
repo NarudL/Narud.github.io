@@ -68,3 +68,9 @@ hr {
     margin: 40px 0;
     border: 1px solid white;
 }
+.foto-portafolio {
+    width: 100%;
+    max-width: 300px;
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px;
+}
