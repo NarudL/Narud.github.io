@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>náruD</title>
+    <title>NáruD</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1 class="titulo">náruD</h1>
@@ -13,16 +13,16 @@
 
     <nav>
         <ul>
-            <li><a href="#" onclick="mostrarGaleria('presencia')">La presencia en la nada</a></li>
-            <li><a href="#" onclick="mostrarGaleria('terrenal')">Terrenal</a></li>
+            <li><a href="#portafolio">Mis Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Galería "La presencia en la nada" -->
-    <section id="presencia" class="galeria oculto">
-        <h2>La presencia en la nada</h2>
-        <div class="imagenes">
+    <section id="portafolio">
+        <h2>Mis Proyectos</h2>
+
+        <div class="marco" onclick="mostrarGaleria('fondo_negro')">La presencia en la nada</div>
+        <div id="fondo_negro" class="galeria oculto">
             <img src="fondo_negro/jazmin.jpg" class="foto-portafolio">
             <img src="fondo_negro/cattleya.jpg" class="foto-portafolio">
             <img src="fondo_negro/helecho.jpg" class="foto-portafolio">
@@ -33,12 +33,9 @@
             <img src="fondo_negro/trimezia.jpg" class="foto-portafolio">
             <img src="fondo_negro/bambu.jpg" class="foto-portafolio">
         </div>
-    </section>
 
-    <!-- Galería "Terrenal" -->
-    <section id="terrenal" class="galeria oculto">
-        <h2>Terrenal</h2>
-        <div class="imagenes">
+        <div class="marco" onclick="mostrarGaleria('terrenal')">Terrenal</div>
+        <div id="terrenal" class="galeria oculto">
             <img src="Terrenal/abeja.JPG" class="foto-portafolio">
             <img src="Terrenal/aranaa.JPG" class="foto-portafolio">
             <img src="Terrenal/bienteveo.JPG" class="foto-portafolio">
@@ -61,27 +58,25 @@
             <img src="Terrenal/pirangarubra.JPG" class="foto-portafolio">
             <img src="Terrenal/sicalis.JPG" class="foto-portafolio">
         </div>
+
+        <div class="marco" onclick="mostrarGaleria('modelos')">Modelos</div>
+        <div id="modelos" class="galeria oculto">
+            <img src="Modelos/bomm1.JPG" class="foto-portafolio">
+            <img src="Modelos/bomm2.JPG" class="foto-portafolio">
+            <img src="Modelos/modelo1.JPG" class="foto-portafolio">
+            <img src="Modelos/modelo2.JPG" class="foto-portafolio">
+            <img src="Modelos/polo1.JPG" class="foto-portafolio">
+            <img src="Modelos/polo2.JPG" class="foto-portafolio">
+            <img src="Modelos/polocar1.JPG" class="foto-portafolio">
+            <img src="Modelos/polocar2.JPG" class="foto-portafolio">
+            <img src="Modelos/poloconcepto1.JPG" class="foto-portafolio">
+            <img src="Modelos/poloconcepto2.JPG" class="foto-portafolio">
+            <img src="Modelos/polomoto1.JPG" class="foto-portafolio">
+            <img src="Modelos/polomoto2.JPG" class="foto-portafolio">
+        </div>
     </section>
 
-    <!-- Galería "Modelos" -->
-    <section>
-    <div class="marco" onclick="mostrarGaleria('modelos')">Modelos</div>
-    <div id="modelos" class="galeria oculto">
-        <img src="Modelos/bomm1.JPG" class="foto-portafolio">
-        <img src="Modelos/bomm2.JPG" class="foto-portafolio">
-        <img src="Modelos/modelo1.JPG" class="foto-portafolio">
-        <img src="Modelos/modelo2.JPG" class="foto-portafolio">
-        <img src="Modelos/polo1.JPG" class="foto-portafolio">
-        <img src="Modelos/polo2.JPG" class="foto-portafolio">
-        <img src="Modelos/polocar1.JPG" class="foto-portafolio">
-        <img src="Modelos/polocar2.JPG" class="foto-portafolio">
-        <img src="Modelos/poloconcepto1.JPG" class="foto-portafolio">
-        <img src="Modelos/poloconcepto2.JPG" class="foto-portafolio">
-        <img src="Modelos/polomoto1.JPG" class="foto-portafolio">
-        <img src="Modelos/polomoto2.JPG" class="foto-portafolio">
-    </div>
-</section>
-
+    <hr>
 
     <section id="contacto">
         <h2>Contacto</h2>
