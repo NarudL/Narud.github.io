@@ -1,4 +1,8 @@
-document.getElementById("mostrar-galeria").addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("portafolio").classList.toggle("oculto");
-});
+function mostrarGaleria() {
+    var galeria = document.getElementById("galeria");
+    if (galeria.style.display === "none" || galeria.style.display === "") {
+        galeria.style.display = "grid";
+    } else {
+        galeria.style.display = "none";
+    }
+}
