@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>naruD</title>
+    <title>náruD</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h1 class="titulo">Narud</h1>
+    <h1 class="titulo">náruD</h1>
     <img src="portada.JPEG" alt="Portada" class="portada">
 
     <nav>
         <ul>
-           
+            <li><a href="#" onclick="mostrarGaleria('presencia')">La presencia en la nada</a></li>
+            <li><a href="#" onclick="mostrarGaleria('terrenal')">Terrenal</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <section id="proyectos">
-        <h2>Mis proyectos</h2>
-        <div class="proyecto" onclick="mostrarGaleria()">
-            <h3>La presencia en la nada</h3>
-        </div>
-        <div id="galeria" class="galeria oculto">
+    <!-- Galería "La presencia en la nada" -->
+    <section id="presencia" class="galeria oculto">
+        <h2>La presencia en la nada</h2>
+        <div class="imagenes">
             <img src="fondo_negro/jazmin.jpg" class="foto-portafolio">
             <img src="fondo_negro/cattleya.jpg" class="foto-portafolio">
             <img src="fondo_negro/helecho.jpg" class="foto-portafolio">
@@ -35,7 +35,33 @@
         </div>
     </section>
 
-    <hr>
+    <!-- Galería "Terrenal" -->
+    <section id="terrenal" class="galeria oculto">
+        <h2>Terrenal</h2>
+        <div class="imagenes">
+            <img src="Terrenal/abeja.JPG" class="foto-portafolio">
+            <img src="Terrenal/aranaa.JPG" class="foto-portafolio">
+            <img src="Terrenal/bienteveo.JPG" class="foto-portafolio">
+            <img src="Terrenal/borboletaflor.JPG" class="foto-portafolio">
+            <img src="Terrenal/chinchilla.JPG" class="foto-portafolio">
+            <img src="Terrenal/chulo.JPG" class="foto-portafolio">
+            <img src="Terrenal/cofi.JPG" class="foto-portafolio">
+            <img src="Terrenal/colibri1.JPG" class="foto-portafolio">
+            <img src="Terrenal/colibri2.JPG" class="foto-portafolio">
+            <img src="Terrenal/cucaracha.JPG" class="foto-portafolio">
+            <img src="Terrenal/gallinas.JPG" class="foto-portafolio">
+            <img src="Terrenal/gecko.JPG" class="foto-portafolio">
+            <img src="Terrenal/grillo.JPG" class="foto-portafolio">
+            <img src="Terrenal/hongo_raro.JPG" class="foto-portafolio">
+            <img src="Terrenal/hongos_naranjas.JPG" class="foto-portafolio">
+            <img src="Terrenal/libelula.JPG" class="foto-portafolio">
+            <img src="Terrenal/pato1.JPG" class="foto-portafolio">
+            <img src="Terrenal/pato2.JPG" class="foto-portafolio">
+            <img src="Terrenal/pato3.JPG" class="foto-portafolio">
+            <img src="Terrenal/pirangarubra.JPG" class="foto-portafolio">
+            <img src="Terrenal/sicalis.JPG" class="foto-portafolio">
+        </div>
+    </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
