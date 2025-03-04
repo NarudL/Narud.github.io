@@ -69,3 +69,6 @@ nav ul li a {
 .foto-portafolio:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
+.oculto {
+    display: none;
+}
