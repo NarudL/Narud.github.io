@@ -46,12 +46,13 @@ nav ul li a {
 }
 
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    justify-content: center;
 }
+
 
 .foto-portafolio {
     width: 100%;
