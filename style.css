@@ -49,7 +49,8 @@ nav ul li a {
     width: 100%;
     max-width: 300px;
     height: auto;
-    object-fit: contain;
+    max-height: 400px; /* Evita que algunas imágenes sean demasiado altas */
+    object-fit: cover; /* Hace que las imágenes llenen el espacio sin distorsionarse */
     aspect-ratio: 3 / 4;
     border-radius: 5px;
 }
