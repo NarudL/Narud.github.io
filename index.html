@@ -2,18 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NarudL Fotografía</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NarudL · Portafolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Portada -->
-  <header>
-    <h1 class="titulo">NarudL Fotografía</h1>
-    <p class="subtitulo">Capturando la luz y la esencia</p>
+  <header class="site-header">
+    <h1>NarudL Fotografía</h1>
     <nav>
       <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#modelos">Modelos</a></li>
         <li><a href="#terrenal">Terrenal</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -22,45 +19,39 @@
   </header>
 
   <main>
-    <!-- Sobre mí -->
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy Mateo Durán, fotógrafo colombiano. Mi enfoque está en la creación de atmósferas que transmitan emociones, explorando tanto la belleza humana como la natural a través de la luz.</p>
-    </section>
-
-    <hr>
-
-    <!-- Galería Modelos -->
-    <section id="modelos" class="galeria-seccion">
+    <section id="modelos" class="gallery-section">
       <h2>Modelos</h2>
-      <div class="galeria">
-        <img src="Modelos/modelo1.jpg" alt="Modelo 1" class="foto-portafolio">
-        <img src="Modelos/modelo2.jpg" alt="Modelo 2" class="foto-portafolio">
-        <img src="Modelos/modelo3.jpg" alt="Modelo 3" class="foto-portafolio">
+      <div class="gallery">
+        <div class="thumb"><img src="Modelos/modelo1.jpg" alt="Modelo 1"></div>
+        <div class="thumb"><img src="Modelos/modelo2.jpg" alt="Modelo 2"></div>
+        <div class="thumb"><img src="Modelos/modelo3.jpg" alt="Modelo 3"></div>
+        <!-- Añade más miniaturas según tus fotos -->
       </div>
     </section>
 
-    <hr>
-
-    <!-- Galería Terrenal -->
-    <section id="terrenal" class="galeria-seccion">
+    <section id="terrenal" class="gallery-section">
       <h2>Terrenal</h2>
-      <div class="galeria">
-        <img src="Terrenal/terr1.jpg" alt="Terrenal 1" class="foto-portafolio">
-        <img src="Terrenal/terr2.jpg" alt="Terrenal 2" class="foto-portafolio">
-        <img src="Terrenal/terr3.jpg" alt="Terrenal 3" class="foto-portafolio">
+      <div class="gallery">
+        <div class="thumb"><img src="Terrenal/terr1.jpg" alt="Terrenal 1"></div>
+        <div class="thumb"><img src="Terrenal/terr2.jpg" alt="Terrenal 2"></div>
+        <div class="thumb"><img src="Terrenal/terr3.jpg" alt="Terrenal 3"></div>
+        <!-- Más fotos si quieres -->
       </div>
     </section>
   </main>
 
-  <hr>
-
-  <!-- Footer -->
-  <footer id="contacto">
-    <h2>Contacto</h2>
+  <footer id="contacto" class="site-footer">
     <p>Email: tuemail@example.com</p>
     <p>Instagram: @narudl</p>
-    <p>© 2025 NarudL - Todos los derechos reservados</p>
+    <p>© 2025 NarudL</p>
   </footer>
+
+  <!-- Modal / Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
