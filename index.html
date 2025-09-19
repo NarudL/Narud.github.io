@@ -1,56 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NarudL · Portafolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NarudL · Work 01</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <h1>NarudL Fotografía</h1>
-    <nav>
-      <ul>
-        <li><a href="#modelos">Modelos</a></li>
-        <li><a href="#terrenal">Terrenal</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1 class="brand">NarudL</h1>
+      <p class="project-title">Work 01 — Modelos</p>
+    </div>
   </header>
 
-  <main>
-    <section id="modelos" class="gallery-section">
-      <h2>Modelos</h2>
-      <div class="gallery">
-        <div class="thumb"><img src="Modelos/modelo1.jpg" alt="Modelo 1"></div>
-        <div class="thumb"><img src="Modelos/modelo2.jpg" alt="Modelo 2"></div>
-        <div class="thumb"><img src="Modelos/modelo3.jpg" alt="Modelo 3"></div>
-        <!-- Añade más miniaturas según tus fotos -->
-      </div>
-    </section>
-
-    <section id="terrenal" class="gallery-section">
-      <h2>Terrenal</h2>
-      <div class="gallery">
-        <div class="thumb"><img src="Terrenal/terr1.jpg" alt="Terrenal 1"></div>
-        <div class="thumb"><img src="Terrenal/terr2.jpg" alt="Terrenal 2"></div>
-        <div class="thumb"><img src="Terrenal/terr3.jpg" alt="Terrenal 3"></div>
-        <!-- Más fotos si quieres -->
-      </div>
-    </section>
+  <main class="project">
+    <div class="wrap">
+      <!-- Cada figure representa una foto (sustituye los nombres por los tuyos reales) -->
+      <section class="stack">
+        <figure id="img-1"><img src="Modelos/modelo1.jpg" alt="Modelo 1"><figcaption>Modelo 1 — descripción breve</figcaption></figure>
+        <figure id="img-2"><img src="Modelos/modelo2.jpg" alt="Modelo 2"><figcaption>Modelo 2</figcaption></figure>
+        <figure id="img-3"><img src="Modelos/modelo3.jpg" alt="Modelo 3"><figcaption>Modelo 3</figcaption></figure>
+        <figure id="img-4"><img src="Modelos/modelo4.jpg" alt="Modelo 4"><figcaption>Modelo 4</figcaption></figure>
+        <!-- Añade/quita <figure> según tus fotos -->
+      </section>
+    </div>
   </main>
 
-  <footer id="contacto" class="site-footer">
-    <p>Email: tuemail@example.com</p>
-    <p>Instagram: @narudl</p>
-    <p>© 2025 NarudL</p>
-  </footer>
-
-  <!-- Modal / Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="Imagen ampliada">
+  <!-- Lightbox / vista individual -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Cerrar">✕</button>
+    <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
+    <div class="lb-figure">
+      <img class="lb-img" src="" alt="">
+      <figcaption class="lb-caption"></figcaption>
+    </div>
+    <button class="lb-nav lb-next" aria-label="Siguiente">›</button>
   </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 NarudL · Instagram: @narudl · Email: tuemail@example.com</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
