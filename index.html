@@ -3,81 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NarudL</title>
+  <title>NarudL Fotografía</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-    }
-
-    header {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url('portada.jpg') no-repeat center center/cover;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-
-    .card {
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-
-    .card img:hover {
-      transform: scale(1.1);
-    }
-
-    footer {
-      padding: 20px;
-      background: #000;
-      margin-top: 20px;
-    }
-  </style>
 </head>
 <body>
+  <!-- Portada -->
   <header>
-    <h1>NarudL Fotografía</h1>
+    <h1 class="titulo">NarudL Fotografía</h1>
+    <p class="subtitulo">Capturando la luz y la esencia</p>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#terrenal">Terrenal</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="gallery">
-      <!-- Fotos de Modelos -->
-      <div class="card"><img src="Modelos/modelo1.jpg" alt="Modelo 1"></div>
-      <div class="card"><img src="Modelos/modelo2.jpg" alt="Modelo 2"></div>
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Soy Mateo Durán, fotógrafo colombiano. Mi enfoque está en la creación de atmósferas que transmitan emociones, explorando tanto la belleza humana como la natural a través de la luz.</p>
+    </section>
 
-      <!-- Fotos de Terrenal -->
-      <div class="card"><img src="Terrenal/terr1.jpg" alt="Terrenal 1"></div>
-      <div class="card"><img src="Terrenal/terr2.jpg" alt="Terrenal 2"></div>
+    <hr>
+
+    <!-- Galería Modelos -->
+    <section id="modelos" class="galeria-seccion">
+      <h2>Modelos</h2>
+      <div class="galeria">
+        <img src="Modelos/modelo1.jpg" alt="Modelo 1" class="foto-portafolio">
+        <img src="Modelos/modelo2.jpg" alt="Modelo 2" class="foto-portafolio">
+        <img src="Modelos/modelo3.jpg" alt="Modelo 3" class="foto-portafolio">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Galería Terrenal -->
+    <section id="terrenal" class="galeria-seccion">
+      <h2>Terrenal</h2>
+      <div class="galeria">
+        <img src="Terrenal/terr1.jpg" alt="Terrenal 1" class="foto-portafolio">
+        <img src="Terrenal/terr2.jpg" alt="Terrenal 2" class="foto-portafolio">
+        <img src="Terrenal/terr3.jpg" alt="Terrenal 3" class="foto-portafolio">
+      </div>
     </section>
   </main>
 
-  <footer>
+  <hr>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: tuemail@example.com</p>
+    <p>Instagram: @narudl</p>
     <p>© 2025 NarudL - Todos los derechos reservados</p>
   </footer>
 </body>
