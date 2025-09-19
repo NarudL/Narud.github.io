@@ -3,86 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NáruD</title>
+    <title>Lautier - Fotografía</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1 class="titulo">náruD</h1>
-    <img src="portada.JPEG" alt="Portada" class="portada">
 
-    <nav>
-        <ul>
-            <li><a href="#portafolio">Mis Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1 class="titulo">Lautier</h1>
+        <p class="subtitulo">Fotografía Artística y Comercial</p>
+        <nav>
+            <ul>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="portafolio">
-        <h2>Mis Proyectos</h2>
+    <main>
+        <section id="sobre-mi">
+            <h2>Mi Enfoque</h2>
+            <p>
+                Soy Lautier, un fotógrafo de Medellín con un ojo único para capturar la belleza en sus formas más puras. Mi trabajo es una mezcla de arte y técnica, enfocado en resaltar la esencia de cada sujeto, ya sean detalles de la naturaleza, paisajes o retratos. Mi objetivo es crear imágenes que no solo se vean bien, sino que cuenten una historia.
+            </p>
+        </section>
 
-        <div class="marco" onclick="mostrarGaleria('fondo_negro')">La presencia en la nada</div>
-        <div id="fondo_negro" class="galeria oculto">
-            <img src="fondo_negro/jazmin.jpg" class="foto-portafolio">
-            <img src="fondo_negro/cattleya.jpg" class="foto-portafolio">
-            <img src="fondo_negro/helecho.jpg" class="foto-portafolio">
-            <img src="fondo_negro/sepalo.jpg" class="foto-portafolio">
-            <img src="fondo_negro/anturio.jpg" class="foto-portafolio">
-            <img src="fondo_negro/cabras.jpg" class="foto-portafolio">
-            <img src="fondo_negro/avion.jpg" class="foto-portafolio">
-            <img src="fondo_negro/trimezia.jpg" class="foto-portafolio">
-            <img src="fondo_negro/bambu.jpg" class="foto-portafolio">
-        </div>
+        <section id="portafolio">
+            <h2>Portafolio</h2>
 
-        <div class="marco" onclick="mostrarGaleria('terrenal')">Terrenal</div>
-        <div id="terrenal" class="galeria oculto">
-            <img src="Terrenal/abeja.JPG" class="foto-portafolio">
-            <img src="Terrenal/aranaa.JPG" class="foto-portafolio">
-            <img src="Terrenal/bienteveo.JPG" class="foto-portafolio">
-            <img src="Terrenal/borboletaflor.JPG" class="foto-portafolio">
-            <img src="Terrenal/chinchilla.JPG" class="foto-portafolio">
-            <img src="Terrenal/chulo.JPG" class="foto-portafolio">
-            <img src="Terrenal/cofi.JPG" class="foto-portafolio">
-            <img src="Terrenal/colibri1.JPG" class="foto-portafolio">
-            <img src="Terrenal/colibri2.JPG" class="foto-portafolio">
-            <img src="Terrenal/cucaracha.JPG" class="foto-portafolio">
-            <img src="Terrenal/gallinas.JPG" class="foto-portafolio">
-            <img src="Terrenal/gecko.JPG" class="foto-portafolio">
-            <img src="Terrenal/grillo.JPG" class="foto-portafolio">
-            <img src="Terrenal/hongo_raro.JPG" class="foto-portafolio">
-            <img src="Terrenal/hongos_naranjas.JPG" class="foto-portafolio">
-            <img src="Terrenal/libelula.JPG" class="foto-portafolio">
-            <img src="Terrenal/pato1.JPG" class="foto-portafolio">
-            <img src="Terrenal/pato2.JPG" class="foto-portafolio">
-            <img src="Terrenal/pato3.JPG" class="foto-portafolio">
-            <img src="Terrenal/pirangarubra.JPG" class="foto-portafolio">
-            <img src="Terrenal/sicalis.JPG" class="foto-portafolio">
-        </div>
+            <div class="galeria-seccion">
+                <h3>Naturaleza y Vida Silvestre</h3>
+                <div class="galeria">
+                    <img src="Terrenal/abeja.JPG" alt="Abeja en flor" class="foto-portafolio">
+                    <img src="Terrenal/aranaa.JPG" alt="Araña en hoja" class="foto-portafolio">
+                    <img src="Terrenal/bienteveo.JPG" alt="Pájaro bienteveo" class="foto-portafolio">
+                    </div>
+            </div>
 
-        <div class="marco" onclick="mostrarGaleria('modelos')">Modelos</div>
-        <div id="modelos" class="galeria oculto">
-            <img src="Modelos/bomm1.JPG" class="foto-portafolio">
-            <img src="Modelos/bomm2.JPG" class="foto-portafolio">
-            <img src="Modelos/modelo1.JPG" class="foto-portafolio">
-            <img src="Modelos/modelo2.JPG" class="foto-portafolio">
-            <img src="Modelos/polo1.JPG" class="foto-portafolio">
-            <img src="Modelos/polo2.JPG" class="foto-portafolio">
-            <img src="Modelos/polocar1.JPG" class="foto-portafolio">
-            <img src="Modelos/polocar2.JPG" class="foto-portafolio">
-            <img src="Modelos/poloconcepto1.JPG" class="foto-portafolio">
-            <img src="Modelos/poloconcepto2.JPG" class="foto-portafolio">
-            <img src="Modelos/polomoto1.JPG" class="foto-portafolio">
-            <img src="Modelos/polomoto2.JPG" class="foto-portafolio">
-        </div>
-    </section>
+            <div class="galeria-seccion">
+                <h3>Plantas y Flores</h3>
+                <div class="galeria">
+                    <img src="fondo_negro/jazmin.jpg" alt="Jazmín sobre fondo oscuro" class="foto-portafolio">
+                    <img src="fondo_negro/cattleya.jpg" alt="Cattleya sobre fondo oscuro" class="foto-portafolio">
+                    <img src="fondo_negro/helecho.jpg" alt="Helecho sobre fondo oscuro" class="foto-portafolio">
+                    </div>
+            </div>
+
+            <div class="galeria-seccion">
+                <h3>Retratos y Moda</h3>
+                <div class="galeria">
+                    <img src="Modelos/bomm1.JPG" alt="Modelo bomm1" class="foto-portafolio">
+                    <img src="Modelos/bomm2.JPG" alt="Modelo bomm2" class="foto-portafolio">
+                    <img src="Modelos/modelo1.JPG" alt="Modelo 1" class="foto-portafolio">
+                    </div>
+            </div>
+
+        </section>
+    </main>
 
     <hr>
 
-    <section id="contacto">
+    <footer id="contacto">
         <h2>Contacto</h2>
         <p>Teléfono: +57 3175371135</p>
         <p>Correo: duranmateo220@gmail.com</p>
         <p>El contacto más rápido es vía <a href="https://wa.me/573175371135" target="_blank">WhatsApp</a>.</p>
-    </section>
+    </footer>
+
 </body>
 </html>
