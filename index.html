@@ -1,49 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>NarudL · Work 01</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NáruD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1 class="brand">NarudL</h1>
-      <p class="project-title">Work 01 — Modelos</p>
-    </div>
-  </header>
+    <h1 class="titulo">NáruD</h1>
+    <img src="portada.JPG" alt="Portada" class="portada">
 
-  <main class="project">
-    <div class="wrap">
-      <!-- Cada figure representa una foto (sustituye los nombres por los tuyos reales) -->
-      <section class="stack">
-        <figure id="img-1"><img src="Modelos/modelo1.jpg" alt="Modelo 1"><figcaption>Modelo 1 — descripción breve</figcaption></figure>
-        <figure id="img-2"><img src="Modelos/modelo2.jpg" alt="Modelo 2"><figcaption>Modelo 2</figcaption></figure>
-        <figure id="img-3"><img src="Modelos/modelo3.jpg" alt="Modelo 3"><figcaption>Modelo 3</figcaption></figure>
-        <figure id="img-4"><img src="Modelos/modelo4.jpg" alt="Modelo 4"><figcaption>Modelo 4</figcaption></figure>
-        <!-- Añade/quita <figure> según tus fotos -->
-      </section>
-    </div>
-  </main>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="toggleAlbum('fondo_negro')">La presencia en la nada</a></li>
+            <li><a href="#" onclick="toggleAlbum('terrenal')">Terrenal</a></li>
+            <li><a href="#" onclick="toggleAlbum('modelos')">Modelos</a></li>
+        </ul>
+    </nav>
 
-  <!-- Lightbox / vista individual -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Cerrar">✕</button>
-    <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
-    <div class="lb-figure">
-      <img class="lb-img" src="" alt="">
-      <figcaption class="lb-caption"></figcaption>
-    </div>
-    <button class="lb-nav lb-next" aria-label="Siguiente">›</button>
-  </div>
+    <section id="fondo_negro" class="galeria oculto">
+        <h2>La presencia en la nada</h2>
+        <div class="imagenes">
+            <img src="fondo_negro/jazmin.jpg" class="foto-portafolio">
+            <img src="fondo_negro/cattleya.jpg" class="foto-portafolio">
+            <img src="fondo_negro/helecho.jpg" class="foto-portafolio">
+            <img src="fondo_negro/sepalo.jpg" class="foto-portafolio">
+            <img src="fondo_negro/anturio.jpg" class="foto-portafolio">
+            <img src="fondo_negro/cabras.jpg" class="foto-portafolio">
+            <img src="fondo_negro/avion.jpg" class="foto-portafolio">
+            <img src="fondo_negro/trimezia.jpg" class="foto-portafolio">
+            <img src="fondo_negro/bambu.jpg" class="foto-portafolio">
+        </div>
+    </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© 2025 NarudL · Instagram: @narudl · Email: tuemail@example.com</p>
-    </div>
-  </footer>
+    <section id="terrenal" class="galeria oculto">
+        <h2>Terrenal</h2>
+        <div class="imagenes">
+            <img src="Terrenal/abeja.JPG" class="foto-portafolio">
+            <img src="Terrenal/aranaa.JPG" class="foto-portafolio">
+            <img src="Terrenal/bienteveo.JPG" class="foto-portafolio">
+            <img src="Terrenal/borboletaflor.JPG" class="foto-portafolio">
+            <img src="Terrenal/chinchilla.JPG" class="foto-portafolio">
+            <img src="Terrenal/chulo.JPG" class="foto-portafolio">
+            <img src="Terrenal/cofi.JPG" class="foto-portafolio">
+            <img src="Terrenal/colibri1.JPG" class="foto-portafolio">
+            <img src="Terrenal/colibri2.JPG" class="foto-portafolio">
+            <img src="Terrenal/cucaracha.JPG" class="foto-portafolio">
+            <img src="Terrenal/gallinas.JPG" class="foto-portafolio">
+            <img src="Terrenal/gecko.JPG" class="foto-portafolio">
+            <img src="Terrenal/grillo.JPG" class="foto-portafolio">
+            <img src="Terrenal/hongo_raro.JPG" class="foto-portafolio">
+            <img src="Terrenal/hongos_naranjas.JPG" class="foto-portafolio">
+            <img src="Terrenal/libelula.JPG" class="foto-portafolio">
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="modelos" class="galeria oculto">
+        <h2>Modelos</h2>
+        <div class="imagenes">
+            <img src="Modelos/bomm1.JPG" class="foto-portafolio">
+            <img src="Modelos/bomm2.JPG" class="foto-portafolio">
+            <img src="Modelos/modelo1.JPG" class="foto-portafolio">
+            <img src="Modelos/modelo2.JPG" class="foto-portafolio">
+            <img src="Modelos/polo1.JPG" class="foto-portafolio">
+            <img src="Modelos/polo2.JPG" class="foto-portafolio">
+            <img src="Modelos/polocar1.JPG" class="foto-portafolio">
+            <img src="Modelos/polocar2.JPG" class="foto-portafolio">
+            <img src="Modelos/poloconcepto1.JPG" class="foto-portafolio">
+            <img src="Modelos/poloconcepto2.JPG" class="foto-portafolio">
+            <img src="Modelos/polomoto1.JPG" class="foto-portafolio">
+            <img src="Modelos/polomoto2.JPG" class="foto-portafolio">
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +57 3175371135</p>
+        <p>Correo: duranmateo220@gmail.com</p>
+        <p>El contacto más rápido es vía <a href="https://wa.me/573175371135" target="_blank">WhatsApp</a>.</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
