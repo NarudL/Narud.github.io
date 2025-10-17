@@ -1,2 +1,2 @@
-# Laurier.github.io
+# Laurtier.github.io
 Portafolio 
